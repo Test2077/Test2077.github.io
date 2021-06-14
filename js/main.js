@@ -53,7 +53,7 @@ function keyPressed() {
           document.getElementById('active23').classList.remove('_qactive');
           loop();
 	if (live === 0){
-            noLoop();
+            noLoop(); //2
           }	
         } 
       }
