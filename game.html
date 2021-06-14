@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	  <script type="text/javascript" src="js/p5min.js"></script>
+	  <script type="text/javascript" src="js/main.js"></script>
+	  <script type="text/javascript" src="js/tile.js"></script>
+	  <div></div>
+	</head>
+	<body>
+			<div class="container1" id="active23">
+				
+				<div><p class="name"></p></div>
+				<div><p class="name name_1">Нажмите на пробел</p></div>
+				<div class="button"><a class="text" href='index.html'>вернуться в главное меню?</a></div>
+			</div>
+			
+			</div>
+	<style type="text/css">
+			body {
+				background: #000;
+				padding-top: 50px;
+				display: flex;
+				justify-content: center;
+				position: relative;
+				z-index: 13;
+			}
+
+			.container1 {
+				visibility: hidden;
+				position: absolute;
+				display: flex;
+				z-index: 10;
+				background: #1240AB;
+				min-width: 600px;
+				height: 635px;
+				padding: 20px;
+				align-items: center;
+				justify-content: center;	
+				flex-direction: column; 
+			}
+			.container {
+				visibility: visible;
+				position: absolute;
+				display: flex;
+				top: 0;
+				left: 0;
+				background: #000;
+				width: 1000px;
+				height: 1035px;
+				padding: 20px;
+				align-items: center;
+				justify-content: center;	
+				flex-direction: column; 
+				z-index: 
+			}
+
+			._qactive{
+				visibility: visible;
+				z-index: 10;
+			}
+			._qactive1{
+				visibility: hidden;
+				z-index: 10;
+			}
+			.container1 div p,a{
+				display: block;
+				text-align: center;
+				font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+				margin: 0;
+				font-size: 18px;
+				color: #fff;
+				text-decoration: none;
+			}
+			.name_1{
+				font-size: 36px;
+			}
+			.button{
+				display: block;
+				text-align: center;
+				margin-bottom: 20px;
+				padding: 10px 20px;
+				font-size: 18px;
+				margin-top: 15px;
+				color: #fff;
+				border: 2px solid #fff;
+				text-decoration: none;
+			}
+		</style>
+	</body>
+</html>
