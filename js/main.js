@@ -52,6 +52,9 @@ function keyPressed() {
         if (keyCode === 32) {
           document.getElementById('active23').classList.remove('_qactive');
           loop();
+	if (live === 0){
+            noLoop();
+          }	
         } 
       }
 
