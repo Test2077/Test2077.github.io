@@ -72,7 +72,7 @@ function draw() {
     ghosts[j].draw();
   }
 
-	
+	//asd
 	pacman.update();
 	pacman.draw();
 
