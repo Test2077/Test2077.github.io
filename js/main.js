@@ -1,43 +1,90 @@
 
-  var FIELD = [
+  var FIELD0 = [
   "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-  "0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0",
+  "0,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,0",
   "0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,3,0,0,0",
   "0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0",
   "0,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0",
-  "0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0",
+  "0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,3,0,0,0,0",
   "0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0",
   "0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0",
   "0,0,0,0,0,0,1,1,0,0,1,0,0,1,1,0,0,0,0,0",
-  "0,1,1,1,1,1,1,1,1,4,1,4,1,1,1,1,1,1,1,0",
+  "0,1,1,1,1,1,1,1,1,4,1,4,1,1,3,1,1,1,1,0",
   "0,1,1,1,1,3,1,1,0,4,1,4,0,1,1,1,1,1,1,0",
   "0,0,0,0,0,0,1,1,0,1,0,0,0,1,1,0,0,0,0,0",
   "0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0",
   "0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0",
   "0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0",
-  "0,1,1,1,1,1,1,1,1,1,5,1,1,1,1,1,1,1,1,0",
+  "0,1,1,3,1,1,1,1,1,1,5,1,1,1,1,3,1,1,1,0",
   "0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0",
   "0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0",
   "0,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,3,1,0",
   "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
 ];
 
+ var FIELD1 = [
+  "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+  "0,1,1,1,1,1,1,1,1,0,0,1,1,1,3,1,1,1,1,0",
+  "0,1,0,0,0,1,1,1,1,0,0,1,0,0,0,0,3,0,1,0",
+  "0,1,0,0,0,1,0,0,1,1,1,1,0,1,1,0,1,0,1,0",
+  "0,1,1,3,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,0",
+  "0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,0",
+  "0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,0",
+  "0,1,1,1,1,1,1,1,4,0,1,0,4,1,1,1,1,1,1,0",
+  "0,1,0,0,0,1,1,0,0,0,1,0,0,0,1,1,0,0,0,0",
+  "0,1,0,1,1,1,1,1,1,1,3,1,1,1,3,1,1,1,1,0",
+  "0,1,0,1,1,3,1,0,0,0,1,0,0,0,1,1,1,1,1,0",
+  "0,1,0,0,0,1,1,4,1,0,1,0,1,4,1,0,0,0,0,0",
+  "0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0",
+  "0,0,1,1,1,0,0,1,0,0,1,0,0,1,1,3,1,0,0,0",
+  "0,0,1,0,0,0,0,1,0,1,1,1,0,1,1,1,1,1,1,0",
+  "0,1,1,3,1,1,1,1,1,1,5,1,1,1,0,0,0,1,1,0",
+  "0,1,1,1,0,1,1,1,1,0,1,0,1,1,0,1,1,1,1,0",
+  "0,1,0,1,1,1,1,1,1,0,1,0,1,1,0,0,0,1,1,0",
+  "0,1,1,1,0,3,1,1,1,1,1,1,1,1,1,1,1,3,1,0",
+  "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+];
+
+var FIELD2 = [
+  "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+  "0,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1,0",
+  "0,1,0,0,1,1,1,1,1,0,0,1,1,1,1,1,0,0,1,0",
+  "0,3,0,0,1,1,1,1,1,0,0,1,1,1,1,1,0,0,3,0",
+  "0,1,0,0,1,1,1,0,1,0,0,1,0,1,1,1,0,0,1,0",
+  "0,1,1,1,1,1,1,0,1,3,1,1,0,1,1,1,1,1,1,0",
+  "0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0",
+  "0,1,0,1,0,1,1,0,0,0,0,0,0,1,1,0,0,1,1,0",
+  "0,1,0,1,0,1,1,4,1,0,0,4,1,1,1,0,0,1,1,0",
+  "0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,0",
+  "0,1,0,1,0,1,1,4,1,0,0,4,1,1,1,1,1,1,1,0",
+  "0,1,0,1,0,1,1,0,0,0,0,0,0,1,0,1,1,0,1,0",
+  "0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,1,0",
+  "0,1,1,1,1,1,1,0,1,1,1,1,0,1,0,1,1,0,1,0",
+  "0,1,1,1,3,1,1,0,1,1,3,1,0,1,1,1,1,1,1,0",
+  "0,1,1,1,1,1,1,1,1,5,1,1,1,1,1,1,1,1,1,0",
+  "0,1,1,0,0,1,1,1,1,0,0,0,1,1,0,0,0,0,1,0",
+  "0,1,1,0,0,1,1,1,1,1,0,1,1,1,1,0,0,1,1,0",
+  "0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,0",
+  "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+  
+];
 
 var field = [];
 var ghosts = [];
-SIZE = localStorage.x;
 var pacman;
 var score;
 var sumScore = 0;
 var endScore = 0;
 var mod = 4;
+var level = 1;
+var life = 3;
 
 function setup() {
 
   createCanvas(canvasW, canvasH); // создание фона
-  
+  ghosts = [];
   score = 0;
-  field = generateField(FIELD);
+  field = generateField(FIELD0);
 }
 
 
@@ -48,15 +95,22 @@ function setup1(x) {
   field = generateField(x);
 }
 
+
+
+
+
 function keyPressed() {
-        if (keyCode === 32) {
-          document.getElementById('active23').classList.remove('_qactive');
-          loop();
-	if (live === 0){
-            noLoop(); //2
-          }	
-        } 
-      }
+           if (keyCode === 32 ){
+
+            if (life >= 1){
+            document.getElementById('active23').classList.remove('_qactive');  
+              loop();
+            }else {
+              noLoop();
+            }
+           }
+}      
+
 
 
 function draw() {
@@ -72,7 +126,7 @@ function draw() {
     ghosts[j].draw();
   }
 
-	//asd
+	
 	pacman.update();
 	pacman.draw();
 
@@ -119,10 +173,10 @@ function drawHUD() {
   fill(255);
   textSize(25);
   textAlign(LEFT);
-  text(" ❤ x " + h1 + "               Уровень: " + live + "           Очки: " + sumScore, 10, height - 10);
+  text(" ❤ x " + life + "               Уровень: " + level + "           Очки: " + sumScore, 10, height - 10);
 }
 
-var live = 1;
+
 
 function endGame(won) {
   textSize(60);
@@ -133,113 +187,70 @@ function endGame(won) {
   textSize(50);
 
   if (won) { 
-      live ++;
-      h1 = 3;
-      GHOST_SPEED2 = 0.2;
-      
-    if (live == 2){
+      level++;
+      life = 3;
+      GHOST_SPEED2 = 0.15; 
+
+    if (level === 2){
         
-        GHOST_SPEED2 += 0.01;    
-        setup();
-        document.getElementsByClassName("name")[0].textContent = 'Вы прошли второй уровень! Перейте на следующий?';
-      } else if (live == 3){
-        
-        GHOST_SPEED2 += 0.01;
-        setup();
-        document.getElementsByClassName("name")[0].textContent = 'Вы прошли второй уровень! Перейте на следующий?';
-      }
-        else if (live  == 4){
-          GHOST_SPEED2 += 0.01;
-          setup();
-          document.getElementsByClassName("name")[0].textContent = 'Вы прошли третий уровень! Перейте на следующий?';
-          // document.getElementsByClassName("name")[0].textContent = 'Вы победили!!! Начать занова нажмите f5';
-          noLoop();
-        }
-        else if (live  == 5){
-          GHOST_SPEED2 += 0.01;
-          PACMAN_SPEED = 0.23;
-          setup();
-          document.getElementsByClassName("name")[0].textContent = 'Вы прошли четвертый уровень! Перейте на следующий?';
-          // document.getElementsByClassName("name")[0].textContent = 'Вы победили!!! Начать занова нажмите f5';
-          noLoop();
-        }
-        else if (live  == 6){
-          GHOST_SPEED2 += 0.01;
+        GHOST_SPEED2 += 0.01; 
           
-          setup();
-          document.getElementsByClassName("name")[0].textContent = 'Вы прошли пятый уровень! Перейте на следующий?';
-          // document.getElementsByClassName("name")[0].textContent = 'Вы победили!!! Начать занова нажмите f5';
-          
-          noLoop();
-        }
-        else if (live  == 7){
-          GHOST_SPEED2 += 0.01;
-          PACMAN_SPEED = 0.26;
-          setup();
-          document.getElementsByClassName("name")[0].textContent = 'Вы прошли шестой уровень! Перейте на следующий?';
-          // document.getElementsByClassName("name")[0].textContent = 'Вы победили!!! Начать занова нажмите f5';
-          
-          noLoop();
-        }
-        else if (live  == 8){
-          GHOST_SPEED2 += 0.01;
-          PACMAN_SPEED = 0.27;
-          setup();
-          document.getElementsByClassName("name")[0].textContent = 'Вы прошли седьмой уровень! Перейте на следующий?';
-          // document.getElementsByClassName("name")[0].textContent = 'Вы победили!!! Начать занова нажмите f5';
-          
-          noLoop();
-        }
-        else if (live  == 9){
-          GHOST_SPEED2 += 0.01;
-          PACMAN_SPEED = 0.28;
-          setup();
-          document.getElementsByClassName("name")[0].textContent = 'Вы прошли восьмой уровень! Перейте на следующий?';
-          // document.getElementsByClassName("name")[0].textContent = 'Вы победили!!! Начать занова нажмите f5';
-          
-          noLoop();
-        }
-        else if (live  == 10){
-          GHOST_SPEED2 += 0.01;
-          PACMAN_SPEED = 0.29;
-          setup();
-          document.getElementsByClassName("name")[0].textContent = 'Вы прошли 9 уровень! Перейте на следующий?';
-          // document.getElementsByClassName("name")[0].textContent = 'Вы победили!!! Начать занова нажмите f5';
-          
-          noLoop();
-        }
-        else if (live  == 11){
+        setup1(FIELD1); 
+        document.getElementsByClassName("name")[0].textContent = 'Вы прошли первый уровень! Перейте на следующий?'; 
+        noLoop();
+      } 
+      else if (level  === 3){
           GHOST_SPEED2 += 0.01;
           PACMAN_SPEED = 0.3;
-          setup();
+          setup1(FIELD2); 
+
+          document.getElementsByClassName("name")[0].textContent = 'Вы прошли второй уровень! Перейте на следующий?';
+        }
+        else if (level  > 3){
+          GHOST_SPEED2 += 0.01;
+          PACMAN_SPEED = 0.3;
+          
           // document.getElementsByClassName("name")[0].textContent = '5Вы прошли второй уровень! Перейте на следующий?';
           document.getElementsByClassName("name")[0].textContent = 'Победа!!! Начать занова нажмите f5';
           document.getElementsByClassName("name_1")[0].textContent = "Вы набрали: " + sumScore + " очков";
           noLoop();
-
         }
+
+        noLoop();
+        document.getElementById('active23').classList.add('_qactive');
       } 
    else {
+      if (life > 0){
         sumScore -= score;
-      if (h1 > 0 ){
-        setup();
-          document.getElementsByClassName("name")[0].textContent = 'Попробывать снова?';
-      } else {
-         noLoop();
-        document.getElementsByClassName("name")[0].textContent = "Поражения! Начать занова нажмите f5";
-        document.getElementsByClassName("name_1")[0].textContent = "Вы набрали: " + sumScore + " очков";  
-         
-          function keyPressed() {
-            if (keyCode === 32) {
-            document.getElementById('active23').classList.remove('_qactive');
-          noLoop();
-        } 
+      if (level == 1 ){ 
+        setup();    
       }
-
-      }      
-    }
-    document.getElementById('active23').classList.add('_qactive');
+      if (level == 2 ){
+       
+        setup1(FIELD1);
+          
+      }
+      if (level == 3 ){
+        
+        setup1(FIELD2);
+          
+      } 
+      document.getElementsByClassName("name")[0].textContent = 'Попробывать снова?';
+      }
+      
+       else if (life == 0){
+        life = 0;
         noLoop();
+        document.getElementsByClassName("name")[0].textContent = "Поражения! Начать занова нажмите f5";
+        document.getElementsByClassName("name_1")[0].textContent = "Вы набрали: " + sumScore + " очков";     
+      }
+      document.getElementById('active23').classList.add('_qactive');
+        noLoop();
+
+    }
+      
+      
+    
 }
 
 /**
