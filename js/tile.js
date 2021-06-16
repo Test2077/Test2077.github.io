@@ -20,7 +20,7 @@ var HALF_SIZE = SIZE / 2;
 var THIRD_SIZE = SIZE / 3;
 var QUARTER_SIZE = SIZE / 4;
 var bag = 0;
-var h1 = 3;
+
 
 var leftarrow = 37;  
 var rightarrow = 39;  
@@ -137,18 +137,18 @@ Tile.prototype.update = function() {
           destinationTile.intact = false;
           
              
-          let timerId = setInterval(() => GHOST_SPEED = 0.1, 1);
+          let timerId = setInterval(() => GHOST_SPEED = 0.05, 0);
 
           // остановить вывод через 3 секунд
-          setTimeout(() => { clearInterval(timerId); GHOST_SPEED = GHOST_SPEED2; }, 2000);   
+          setTimeout(() => { clearInterval(timerId); GHOST_SPEED = GHOST_SPEED2; }, 3000);   
           break;
       }
     }
         endScore / 2;
-      if (score > endScore) // check if Pac-man has won
+      if (score == endScore) // check if Pac-man has won
         endGame(true);
         
-    
+     
 
   } else if (this.type == "GHOST") {
     /* GHOST AI */
@@ -156,8 +156,9 @@ Tile.prototype.update = function() {
 		var distance = dist(pacman.x, pacman.y, this.x, this.y);
 
     if (distance < 0.3){
-        h1--;
+        life--;
         endGame(false);
+
         death.play();
     }
     
@@ -258,10 +259,7 @@ Tile.prototype.draw = function() {
 
 };
 
-/**
- * calculates movement for use within update function
- * returns whether it's a valid move or not
- */
+
 Tile.prototype.move = function(x, y, relative) {
 
   var destinationX, destinationY;
@@ -300,3 +298,29 @@ function getTile(x, y) {
 
   return field[y * DIMENSIONS + x];
 }
+
+
+$('.first').click(function() {
+  function storeColor(aBtn) {
+    var originalColor = $(aBtn).data("originalcolor");
+    if (!originalColor) {
+      originalColor = window.getComputedStyle(aBtn).backgroundColor;
+      $(aBtn).data("originalcolor", originalColor);
+    }
+    return originalColor;
+  }
+  function resetColor(aBtn) {
+    var originalColor = storeColor(aBtn);
+    $(aBtn).css('background-color', originalColor);
+  }
+  function setColor(aBtn) {
+    storeColor(aBtn);
+    var newColor = $(aBtn).data("backcolor");
+    $(aBtn).css('background-color', newColor);
+  }
+
+  $(".first button").each(function(){
+    resetColor(this);
+  });
+  setColor($(this).find("button")[0]);
+});
