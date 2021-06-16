@@ -5,15 +5,21 @@
 	  <script type="text/javascript" src="js/p5min.js"></script>
 	  <script type="text/javascript" src="js/main.js"></script>
 	  <script type="text/javascript" src="js/tile.js"></script>
+	  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
 	  <div></div>
 	</head>
 	<body>
+		<!-- <div class="con" id="active23"></div> -->
 			<div class="container1" id="active23">
 				
 				<div><p class="name"></p></div>
 				<div><p class="name name_1">Нажмите на пробел</p></div>
 				<div class="button"><a class="text" href='index.html'>вернуться в главное меню?</a></div>
 			</div>
+			
 			
 			</div>
 	<style type="text/css">
@@ -25,6 +31,14 @@
 				position: relative;
 				z-index: 13;
 			}
+			.con{
+				position: absolute;
+				height: 1000px;
+				width: 1000px;
+				background: blue;
+				visibility: hidden;
+				z-index: 3;
+			}
 
 			.container1 {
 				visibility: hidden;
@@ -32,8 +46,8 @@
 				display: flex;
 				z-index: 10;
 				background: #1240AB;
-				min-width: 600px;
-				height: 635px;
+				min-width: 500px;
+				height: 535px;
 				padding: 20px;
 				align-items: center;
 				justify-content: center;	
