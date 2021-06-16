@@ -13,11 +13,12 @@
 				<div class="set">
 					Размер игрового поля
 				</div>
-				<div class="set-block">
-				<a href="#" id="size1" class="button" onclick="localStorage.setItem('x', 25);">Маленький</a>
-				<a href="#" id="size1" class="button" onclick="localStorage.setItem('x', 30);">Средний</a>
-				<a href="#" id="size1" class="button" onclick="localStorage.setItem('x', 40);">Большой</a>
-				</div>
+			
+		<div class="set-block">
+		  <div class="first"><button data-backcolor="#999" id="size1" class="button" onclick="localStorage.setItem('x', 25);">Маленький</button></div>
+		  <div class="first"><button data-backcolor="#999" id="size1" class="button" onclick="localStorage.setItem('x', 30);">Средний</button></div>
+		  <div class="first"><button data-backcolor="#999" id="size1" class="button" onclick="localStorage.setItem('x', 40);">Большой</button></div>
+		</div>
 				<div class="set">
 					Управления
 				</div>
@@ -54,6 +55,21 @@
 				
 			}
 
+			/*.button 
+            {
+                display:inline-block;
+                height:10px;
+                width:10px;
+                border-radius:10px;
+            }*/
+
+			/*.menu {
+			  width: 50%;
+			  margin: 0 auto;
+			  padding-top: 50px;
+			  display: flex;
+			}*/
+
 			._qactive{
 				
 				z-index: 10;
@@ -71,8 +87,14 @@
 				border: 2px solid #fff;
 				text-decoration: none;
 				margin: 0 10px;
+				background: transparent;
+				cursor: pointer;
 			}
 
+			.button2{
+				border: none;
+			}
+			
 			.text{
 				color: #fff;
 				font-size: 18px;
@@ -94,6 +116,7 @@
 				height: 350px;
 			}
 		</style>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript" src=js/tile.js>
 		</script>
 	</body>
